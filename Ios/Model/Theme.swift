@@ -1,0 +1,48 @@
+//
+//  Theme.swift
+//  Ios
+//
+//  Created by Danni Ios on 16.11.2023.
+//
+
+import SwiftUI
+
+enum Theme: String {
+case bubblegum
+    case buttercup
+    case indigo
+    case lavender
+    case magenta
+    case navy
+    case orange
+    case oxblood
+    case periwinkle
+    case poppy
+    case purple
+    case seafoam
+    case sky
+    case tan
+    case teal
+    case yellow
+    case black
+    
+    var accentColor: Color {
+            switch self {
+            case .bubblegum, .buttercup, .lavender, .black, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+            case .indigo, .magenta, .navy, .oxblood, .purple: return .white
+            }
+        }
+    
+    var mainColor: Color {
+        return Color(.yellow)
+        
+    }
+    
+    var backgroundColor: Color {
+        return Color(.black)
+        
+    }
+    
+    
+    
+}
