@@ -13,8 +13,12 @@ import SwiftUI
 struct MainScreen : View  {
     var body: some View {
         
+        VStack {
         HeaderWelcome()
-        
+        ChosenDoctorHeader()
+        SearchButton()
+        }
+    
         
      }
 }

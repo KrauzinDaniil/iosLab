@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChosenDoctorHeader : View  {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 ZStack {
                     Circle().frame(width: 65, height: 65)
@@ -28,12 +28,23 @@ struct ChosenDoctorHeader : View  {
                             Image("arrow-right")
                                 
                         }
+            }.padding()
+            Divider().frame(width: 200, height: 1)
+            HStack()  {
+                Image("calendar-2")
+                Text("Sunday 23 June").font(.caption)
+                Image("clock")
+                Text("11:00 - 12:00 AM").font(.caption)
+            
             }
+           
+            
+            
             
         
 
-        }.frame(width : 250, height: 100).clipShape(RoundedRectangle(cornerRadius: 10)).background(Color.blue)
-            .foregroundColor(.white)
+        }.frame(width : 300).background(Color.blue).clipShape(RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.white).padding()
         
     }
 }

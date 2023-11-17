@@ -19,7 +19,7 @@ struct HeaderWelcome : View  {
         }
             Spacer()
           Image("Frame")
-        }
+        }.padding()
         
     }
 }
