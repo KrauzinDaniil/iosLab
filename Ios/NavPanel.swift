@@ -9,10 +9,12 @@ import SwiftUI
 
 
 struct NavPanel : View  {
+    let scrums: [DailyScrum]
     var body: some View {
+       
             TabView {
                 
-                MainScreen()
+                MainScreen(scrums: scrums)
                    
                     .tabItem {
                         Image(systemName: "1.square.fill")
@@ -30,7 +32,7 @@ struct NavPanel : View  {
                 
             }
                 
-            }.padding()
+            }
     }
 }
 
@@ -38,7 +40,7 @@ struct NavPanel : View  {
 
 struct NavPanel_Preview : PreviewProvider  {
     static var previews: some View  {
-        NavPanel()
+        NavPanel(scrums: DailyScrum.sampleData)
     }
     
 }
