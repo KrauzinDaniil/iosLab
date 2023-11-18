@@ -17,6 +17,7 @@ struct HeaderWelcome : View  {
             Text("Hello")
             Text("Hi, James")
         }
+            
             Spacer()
           Image("Frame")
         }.padding()

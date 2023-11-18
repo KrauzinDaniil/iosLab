@@ -11,21 +11,29 @@ import SwiftUI
 
 
 struct MainScreen : View  {
+    let scrums: [DailyScrum]
+    
     var body: some View {
-        
+        ScrollView {
+            
         VStack {
         HeaderWelcome()
         ChosenDoctorHeader()
         SearchButton()
+        IconsList()
+        DoctorList(scrums: scrums)
+          
+       
         }
     
         
      }
+    }
 }
 
 struct MainScreen_Preview : PreviewProvider  {
     static var previews: some View  {
-        MainScreen()
+        MainScreen(scrums: DailyScrum.sampleData)
     }
     
 }

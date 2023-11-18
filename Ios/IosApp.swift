@@ -11,7 +11,7 @@ import SwiftUI
 struct IosApp: App {
     var body: some Scene {
         WindowGroup {
-            ScrumsView(scrums: DailyScrum.sampleData)
+           NavPanel(scrums: DailyScrum.sampleData)
 
         }
     }
