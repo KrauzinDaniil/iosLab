@@ -16,18 +16,18 @@ struct MainScreen : View  {
     var body: some View {
         ScrollView {
             
-        VStack {
-        HeaderWelcome()
-        ChosenDoctorHeader()
-        SearchButton()
-        IconsList()
-        DoctorList(scrums: scrums)
-          
-       
+            VStack {
+                HeaderWelcome()
+                ChosenDoctorHeader()
+                SearchButton()
+                IconsList()
+                DoctorList(scrums: scrums)
+                
+                
+            }
+            
+            
         }
-    
-        
-     }
     }
 }
 
@@ -37,6 +37,6 @@ struct MainScreen_Preview : PreviewProvider  {
     }
     
 }
-        
-        
+
+
         

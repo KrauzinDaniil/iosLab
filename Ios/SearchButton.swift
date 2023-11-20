@@ -11,14 +11,16 @@ import SwiftUI
 struct SearchButton : View  {
     var body: some View {
         Button(action: {
-                    // Действие кнопки
-                }) {
-                    
+            // Действие кнопки
+        }) {
+            
             HStack {
                 Image("search-normal")
-                Text("Search doctor or health issue")
+                Text("Search doctor or health issue").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
             }.padding()
-                }.background(Color.gray).clipShape(RoundedRectangle(cornerRadius: 20))
+            Spacer()
+        }.frame(maxWidth: .infinity)
+            .background(BaseColor.searchButtonColor).clipShape(RoundedRectangle(cornerRadius: 20)).padding()
     }
     
 }

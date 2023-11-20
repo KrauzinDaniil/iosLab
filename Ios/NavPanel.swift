@@ -11,30 +11,39 @@ import SwiftUI
 struct NavPanel : View  {
     let scrums: [DailyScrum]
     var body: some View {
-       
-            TabView {
-                
-                MainScreen(scrums: scrums)
-                   
-                    .tabItem {
-                        Image(systemName: "1.square.fill")
-                        
+        
+        TabView {
+             
+            MainScreen(scrums: scrums).padding(.leading, 12).padding(.trailing, 12)
+                .tabItem {
+                    Button(action: {
+                        // Действие кнопки
+                    }) {
+                        HStack {
+                            Image("Home")
+                            
+                        }
                     }
-                Text("Вторая вкладка")
-                    .tabItem {
-                        Image(systemName: "2.square.fill")
-                      
-                    }
-                
+                    
+                }
+            
+            
             Text("Вторая вкладка")
-            .tabItem {
-                Image(systemName: "2.square.fill")
-                
-            }
-                
-            }
+                .tabItem {
+                    Image(systemName: "2.square.fill")
+                    
+                }
+            
+            Text("Вторая вкладка")
+                .tabItem {
+                    Image(systemName: "2.square.fill")
+                    
+                }
+            
+        }
     }
 }
+
 
 
 

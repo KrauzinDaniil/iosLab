@@ -8,31 +8,50 @@
 import SwiftUI
 
 
+
 struct CardView: View {
     let scrum: DailyScrum
     var body: some View {
         VStack(alignment: .leading) {
-        Text(scrum.title).font(.headline).accessibilityAddTraits(.isHeader)
-            Spacer()
+            
+            
             HStack {
-                Label("\(scrum.attendees.count)", systemImage: "person.3").accessibilityLabel("\(scrum.attendees.count) attendees")
-                Spacer()
-                            Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .padding(.trailing, 20).labelStyle(.trailingIcon).accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
+                Image(scrum.image).resizable().frame(width: 80, height:50).clipShape(Circle())
+                VStack{
+                    Text(scrum.name)
+                    Text(scrum.specialization)
+                }
+                Image("location")
+                Text(String(scrum.distance)  + "KM")
+                
                 
                 
             }.font(.caption)
-
+            Divider()
+            HStack {
+                Image("clock-1")
+                Text("4.8 (120 Reviews)")
+                Spacer()
+                Image("clock-2")
+                Text("Open at 17:00")
+                
+                
+                
+            }.font(.caption)
+            
+            
+            
+            
         }.padding()
-        .foregroundColor(scrum.theme.accentColor)
+            .foregroundColor(scrum.theme.accentColor)
         
     }
 }
 
 
 struct CardView_Previews: PreviewProvider {
-    static var scrum = DailyScrum.sampleData[1]
-        static var previews: some View {
-            CardView(scrum:scrum).previewLayout(.fixed(width : 400, height : 60))
-        }
+    static var scrum = DailyScrum.sampleData[0]
+    static var previews: some View {
+        CardView(scrum:scrum).previewLayout(.fixed(width : 400, height : 100))
+    }
 }

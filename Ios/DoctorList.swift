@@ -15,31 +15,31 @@ struct DoctorList : View  {
     var body: some View {
         
         VStack {
-        HStack{
-        Text("Near Doctor")
-        Spacer()
-        }
+            HStack{
+                Text("Near Doctor")
+                Spacer()
+            }
             
             ForEach(scrums) { scrum in
-                   CardView(scrum: scrum)
-                 
-               }
+                CardView(scrum: scrum)
+                
+            }
             
-    }
+        }
         
         
     }
-        
     
-    }
+    
+}
 
 
 
 
 
 struct DoctorList_Preview : PreviewProvider  {
-static var previews: some View  {
-    DoctorList(scrums: DailyScrum.sampleData)
-}
-
+    static var previews: some View  {
+        DoctorList(scrums: DailyScrum.sampleData)
+    }
+    
 }

@@ -11,17 +11,19 @@ import Foundation
 
 struct DailyScrum : Identifiable {
     let id : UUID
-    var title: String
-    var attendees: [String]
-    var lengthInMinutes: Int
+    var image: String
+    var name: String
+    var specialization: String
+    var distance: Float
     
     var theme: Theme
 
-    init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
+    init(id: UUID = UUID(), image: String, name: String, specialization: String, distance : Float, theme: Theme) {
         self.id = id
-        self.title = title
-        self.attendees = attendees
-        self.lengthInMinutes = lengthInMinutes
+        self.image = image
+        self.name = name
+        self.specialization = specialization
+        self.distance = distance
         self.theme = theme
     }
 }
@@ -30,9 +32,9 @@ struct DailyScrum : Identifiable {
 extension DailyScrum {
     static var sampleData: [DailyScrum] {
         [
-            DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Simon", "Jonathan"], lengthInMinutes: 10, theme: .yellow),
-            DailyScrum(title: "App Dev", attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"], lengthInMinutes: 5, theme: .orange),
-            DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 5, theme: .poppy)
+            DailyScrum(image: "doctorOrder", name: "Dr. Joseph Brosito", specialization: "Dental Specialist", distance: 1.2, theme: .yellow),
+            DailyScrum(image: "Doctor",  name: "Dr. Imran Syahir",   specialization: "General Doctor", distance: 1.2, theme: .orange)
+            
         ]
     }
 }
