@@ -1,2 +1,12 @@
-"a" = "Hello";
-"keyee" = "ByeBye";
+"Hello" = "Hello";
+"Hi" = "Hi";
+"Dr" =  "Dr";
+"Search doctor or health issue" = "Search doctor or health issue";
+"Covid 19" = "Covid 19";
+"Doctor" = "Doctor";
+"Medicine" = "Medicine";
+"Hospital" = "Hospital";
+"Near Doctor" = "Near Doctor";
+"Reviews" = "Reviews";
+"Open at" = "Open at";
+"Home" = "Home";

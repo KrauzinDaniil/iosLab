@@ -13,5 +13,5 @@ import SwiftUI
 struct BaseColor  {
      static let mainNavColor = Color(red: 0.28, green: 0.58, blue: 1)
      static let searchButtonColor = Color(red : 0.98, green: 0.98, blue: 0.98)
-    
+     static let tabButtonColor = Color(red : 0.94, green : 0.98, blue: 1)
 }

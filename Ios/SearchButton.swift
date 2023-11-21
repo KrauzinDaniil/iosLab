@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct SearchButton : View  {
+    let localisedSearch = NSLocalizedString("Search doctor or health issue", comment: "")
+
     var body: some View {
         Button(action: {
             // Действие кнопки
@@ -16,7 +18,7 @@ struct SearchButton : View  {
             
             HStack {
                 Image("search-normal")
-                Text("Search doctor or health issue").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                Text(localisedSearch).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
             }.padding()
             Spacer()
         }.frame(maxWidth: .infinity)

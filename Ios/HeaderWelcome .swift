@@ -10,13 +10,15 @@ import SwiftUI
 
 
 struct HeaderWelcome : View  {
-    let localisedString = NSLocalizedString("a", comment: "")
+    let localisedHello = NSLocalizedString("Hello", comment: "")
+    let localisedHi = NSLocalizedString("Hi", comment: "")
+    let user : User
     var body: some View {
         
         HStack {
             VStack(alignment: .leading) {
-                Text("Hello").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
-                Text("Hi, James").font(Font.welcomeText).foregroundColor(Color.welcomeTextColor)
+                Text(localisedHello).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                Text(localisedHi + ", " + user.name).font(Font.welcomeText).foregroundColor(Color.welcomeTextColor)
             }
             
             Spacer()
@@ -32,7 +34,7 @@ struct HeaderWelcome : View  {
 struct HeaderWelcome_Preview : PreviewProvider  {
     static var previews: some View  {
        
-            HeaderWelcome()
+        HeaderWelcome(user: User.createdUser)
                
             
         

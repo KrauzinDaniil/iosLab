@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct NavPanel : View  {
-    let scrums: [DailyScrum]
+    let scrums: [DoctorList]
     var body: some View {
         
         TabView {
@@ -19,8 +19,10 @@ struct NavPanel : View  {
                     Button(action: {
                         // Действие кнопки
                     }) {
-                        HStack {
+                        ZStack {
                             Image("Home")
+                            Text("")
+                          
                             
                         }
                     }
@@ -49,7 +51,7 @@ struct NavPanel : View  {
 
 struct NavPanel_Preview : PreviewProvider  {
     static var previews: some View  {
-        NavPanel(scrums: DailyScrum.sampleData)
+        NavPanel(scrums: DoctorList.sampleData)
     }
     
 }

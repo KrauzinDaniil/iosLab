@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct IconsList : View  {
+    let localisedCovid19 = NSLocalizedString("Covid 19", comment: "")
+    let localisedDoctor = NSLocalizedString("Doctor", comment: "")
+    let localisedMedicine = NSLocalizedString("Medicine", comment: "")
+    let localisedHospital = NSLocalizedString("Hospital", comment: "")
+  
     var body: some View {
         HStack {
             Button(action: {
@@ -18,7 +23,7 @@ struct IconsList : View  {
                         Circle().frame(width : 72, height: 72)
                         Image("sun")
                     }.foregroundColor(BaseColor.searchButtonColor)
-                    Text("Covid-19").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                    Text(localisedCovid19).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
                 }
             }.padding(.trailing, 8)
             Button(action: {
@@ -29,7 +34,7 @@ struct IconsList : View  {
                         Circle().frame(width : 72, height: 72)
                         Image("profile-add")
                     }.foregroundColor(BaseColor.searchButtonColor)
-                    Text("Doctor").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                    Text(localisedDoctor).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
                 }
             }.padding(.trailing, 8)
             Button(action: {
@@ -40,7 +45,7 @@ struct IconsList : View  {
                         Circle().frame(width : 72, height: 72)
                         Image("link")
                     }.foregroundColor(BaseColor.searchButtonColor)
-                    Text("Medicine").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                    Text(localisedMedicine).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
                 }
             }.padding(.trailing, 8)
             Button(action: {
@@ -51,10 +56,10 @@ struct IconsList : View  {
                         Circle().frame(width : 72, height: 72)
                         Image("hospital")
                     }.foregroundColor(BaseColor.searchButtonColor)
-                    Text("Hospital").font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
+                    Text(localisedHospital).font(Font.regularText).foregroundColor(Color.regularTextColorBlue)
                 }
             }
-        }
+        }.padding(.bottom,20)
     }
 }
 
