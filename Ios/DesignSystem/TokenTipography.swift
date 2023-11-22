@@ -11,6 +11,7 @@ import SwiftUI
     extension Font   {
 
         static let regularText = Font.custom("Poppins-Regular", size: 16)
+        static let regularTextSmaller = Font.custom("Poppins-Regular", size: 15)
         static let welcomeText = Font.custom("Poppins-Bold", size: 20)
         static let regularBold = Font.custom("Poppins-Bold", size: 16)
         static let regularTextSmall = Font.custom("Poppins-Regular", size:14)
@@ -19,6 +20,7 @@ import SwiftUI
         static let regularBoldLarger = Font.custom("Poppins-Bold", size: 18)
         static let lightTextSmallest = Font.custom("Poppins-Light", size: 12)
         static let nunitoBold = Font.custom("Nunito-Bold", size : 14)
+        static let semiBoldPoppins = Font.custom("Poppins-SemiBold", size : 16)
         
     }
 

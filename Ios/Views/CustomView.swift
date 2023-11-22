@@ -14,11 +14,11 @@ struct TBView: View {
     var body: some View {
         
         VStack(spacing: 0) {
-        
+            
             
             switch selectedTab {
             case 0:
-                MainScreen(scrums: scrums).padding(.leading, 12).padding(.trailing, 12)
+                MainScreen(scrums: scrums).padding(.leading, MainScreenPaddings.width).padding(.trailing, MainScreenPaddings.height)
             case 1:
                 
                 Text("Tab 2")
@@ -44,5 +44,6 @@ struct TBView: View {
 struct TBView_Previews: PreviewProvider {
     static var previews: some View {
         TBView(scrums: DoctorList.sampleData)
+        
     }
 }

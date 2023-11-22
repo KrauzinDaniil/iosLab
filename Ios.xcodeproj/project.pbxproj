@@ -11,23 +11,23 @@
 		32026E972B0D03F30044367B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32026E962B0D03F30044367B /* CustomTabBar.swift */; };
 		324A16F02B0940EC0099E9B6 /* ListDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A16EF2B0940EC0099E9B6 /* ListDoctor.swift */; };
 		325927452B04DDBB00BD8A6E /* IosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325927442B04DDBB00BD8A6E /* IosApp.swift */; };
-		325927472B04DDBB00BD8A6E /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325927462B04DDBB00BD8A6E /* MeetingView.swift */; };
 		325927492B04DDBC00BD8A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325927482B04DDBC00BD8A6E /* Assets.xcassets */; };
-		3259274C2B04DDBC00BD8A6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3259274B2B04DDBC00BD8A6E /* Preview Assets.xcassets */; };
 		326A72832B0D250100BA8173 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 326A72852B0D250100BA8173 /* Localization.strings */; };
 		326A72882B0D2BDE00BA8173 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A72872B0D2BDE00BA8173 /* UserInfo.swift */; };
 		326A728A2B0D323600BA8173 /* DoctorMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A72892B0D323600BA8173 /* DoctorMenu.swift */; };
 		327C97142B063E1D000BFA56 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C97132B063E1D000BFA56 /* Theme.swift */; };
 		327C97162B063E1D000BFA56 /* DoctorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C97152B063E1D000BFA56 /* DoctorList.swift */; };
-		327C97182B063E1D000BFA56 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C97172B063E1D000BFA56 /* CardView.swift */; };
-		327C971A2B0643F7000BFA56 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C97192B0643F7000BFA56 /* TrailingIconLabelStyle.swift */; };
+		327C97182B063E1D000BFA56 /* DoctorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C97172B063E1D000BFA56 /* DoctorSample.swift */; };
 		3285FE532B0B9DA50096ECBB /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285FE522B0B9DA50096ECBB /* AppColors.swift */; };
 		32999E5A2B07757400588FD9 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32999E592B07757400588FD9 /* MainScreen.swift */; };
 		32999E5C2B07781C00588FD9 /* HeaderWelcome .swift in Sources */ = {isa = PBXBuildFile; fileRef = 32999E5B2B07781C00588FD9 /* HeaderWelcome .swift */; };
 		32999E5E2B07797D00588FD9 /* ChosenDoctorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32999E5D2B07797D00588FD9 /* ChosenDoctorHeader.swift */; };
 		329C525E2B07E19600329251 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C525D2B07E19600329251 /* SearchButton.swift */; };
-		32A0BB732B06885C005ED767 /* NavPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0BB722B06885C005ED767 /* NavPanel.swift */; };
 		32AE6B842B0908C600564924 /* IconsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE6B832B0908C600564924 /* IconsList.swift */; };
+		32AF96B82B0DF6AE008A15AD /* GeneralImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF96B72B0DF6AE008A15AD /* GeneralImages.swift */; };
+		32AF96BA2B0E0668008A15AD /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32AF96B92B0E0668008A15AD /* Poppins-SemiBold.ttf */; };
+		32AF96BC2B0E0BAF008A15AD /* Padding&Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF96BB2B0E0BAF008A15AD /* Padding&Size.swift */; };
+		32AF96BE2B0E1019008A15AD /* CustomButtonNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF96BD2B0E1019008A15AD /* CustomButtonNav.swift */; };
 		32D850342B0A6E5C0048FD8D /* TokenTipography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D850332B0A6E5C0048FD8D /* TokenTipography.swift */; };
 		32D850372B0A74E50048FD8D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32D850362B0A74E50048FD8D /* Poppins-Regular.ttf */; };
 		32D850392B0A74FF0048FD8D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32D850382B0A74FF0048FD8D /* Poppins-Bold.ttf */; };
@@ -40,9 +40,7 @@
 		324A16EF2B0940EC0099E9B6 /* ListDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDoctor.swift; sourceTree = "<group>"; };
 		325927412B04DDBB00BD8A6E /* Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		325927442B04DDBB00BD8A6E /* IosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosApp.swift; sourceTree = "<group>"; };
-		325927462B04DDBB00BD8A6E /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		325927482B04DDBC00BD8A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3259274B2B04DDBC00BD8A6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		326A727F2B0D1B5C00BA8173 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		326A72802B0D1C9900BA8173 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		326A72842B0D250100BA8173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
@@ -50,20 +48,22 @@
 		326A72892B0D323600BA8173 /* DoctorMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorMenu.swift; sourceTree = "<group>"; };
 		327C97132B063E1D000BFA56 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		327C97152B063E1D000BFA56 /* DoctorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorList.swift; sourceTree = "<group>"; };
-		327C97172B063E1D000BFA56 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		327C97192B0643F7000BFA56 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		327C97172B063E1D000BFA56 /* DoctorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSample.swift; sourceTree = "<group>"; };
 		3285FE522B0B9DA50096ECBB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		32999E592B07757400588FD9 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		32999E5B2B07781C00588FD9 /* HeaderWelcome .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderWelcome .swift"; sourceTree = "<group>"; };
 		32999E5D2B07797D00588FD9 /* ChosenDoctorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenDoctorHeader.swift; sourceTree = "<group>"; };
 		329C525D2B07E19600329251 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
-		32A0BB722B06885C005ED767 /* NavPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPanel.swift; sourceTree = "<group>"; };
 		32AE6B832B0908C600564924 /* IconsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsList.swift; sourceTree = "<group>"; };
+		32AF96B72B0DF6AE008A15AD /* GeneralImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralImages.swift; sourceTree = "<group>"; };
+		32AF96B92B0E0668008A15AD /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		32AF96BB2B0E0BAF008A15AD /* Padding&Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Padding&Size.swift"; sourceTree = "<group>"; };
+		32AF96BD2B0E1019008A15AD /* CustomButtonNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonNav.swift; sourceTree = "<group>"; };
 		32D850332B0A6E5C0048FD8D /* TokenTipography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTipography.swift; sourceTree = "<group>"; };
 		32D850362B0A74E50048FD8D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		32D850382B0A74FF0048FD8D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		32D8503A2B0A75130048FD8D /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
-		32D8503C2B0A76380048FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32D8503C2B0A76380048FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,58 +97,65 @@
 		325927432B04DDBB00BD8A6E /* Ios */ = {
 			isa = PBXGroup;
 			children = (
-				3285FE512B0B99270096ECBB /* Assets */,
 				32D8503C2B0A76380048FD8D /* Info.plist */,
-				327C97122B063DD3000BFA56 /* Model */,
-				325927442B04DDBB00BD8A6E /* IosApp.swift */,
-				325927462B04DDBB00BD8A6E /* MeetingView.swift */,
-				325927482B04DDBC00BD8A6E /* Assets.xcassets */,
-				3259274A2B04DDBC00BD8A6E /* Preview Content */,
-				327C97172B063E1D000BFA56 /* CardView.swift */,
-				32A0BB722B06885C005ED767 /* NavPanel.swift */,
-				32999E592B07757400588FD9 /* MainScreen.swift */,
-				32999E5B2B07781C00588FD9 /* HeaderWelcome .swift */,
-				32999E5D2B07797D00588FD9 /* ChosenDoctorHeader.swift */,
-				329C525D2B07E19600329251 /* SearchButton.swift */,
-				32AE6B832B0908C600564924 /* IconsList.swift */,
-				324A16EF2B0940EC0099E9B6 /* ListDoctor.swift */,
-				32026E942B0D038D0044367B /* CustomView.swift */,
-				32026E962B0D03F30044367B /* CustomTabBar.swift */,
+				32AF96B62B0DF52C008A15AD /* DesignSystem */,
+				32AF96B52B0DF43D008A15AD /* ViewModel */,
+				32AF96B42B0DF3D7008A15AD /* Views */,
+				3285FE512B0B99270096ECBB /* Assets */,
 			);
 			path = Ios;
-			sourceTree = "<group>";
-		};
-		3259274A2B04DDBC00BD8A6E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3259274B2B04DDBC00BD8A6E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		327C97122B063DD3000BFA56 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				32D850352B0A74750048FD8D /* Fon */,
-				327C97132B063E1D000BFA56 /* Theme.swift */,
-				327C97152B063E1D000BFA56 /* DoctorList.swift */,
-				327C97192B0643F7000BFA56 /* TrailingIconLabelStyle.swift */,
-				326A72872B0D2BDE00BA8173 /* UserInfo.swift */,
-				326A72892B0D323600BA8173 /* DoctorMenu.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3285FE512B0B99270096ECBB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				32D850332B0A6E5C0048FD8D /* TokenTipography.swift */,
-				3285FE522B0B9DA50096ECBB /* AppColors.swift */,
+				325927482B04DDBC00BD8A6E /* Assets.xcassets */,
+				32AF96B72B0DF6AE008A15AD /* GeneralImages.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		32D850352B0A74750048FD8D /* Fon */ = {
+		32AF96B42B0DF3D7008A15AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				325927442B04DDBB00BD8A6E /* IosApp.swift */,
+				327C97172B063E1D000BFA56 /* DoctorSample.swift */,
+				32999E592B07757400588FD9 /* MainScreen.swift */,
+				32999E5B2B07781C00588FD9 /* HeaderWelcome .swift */,
+				32999E5D2B07797D00588FD9 /* ChosenDoctorHeader.swift */,
+				329C525D2B07E19600329251 /* SearchButton.swift */,
+				32AE6B832B0908C600564924 /* IconsList.swift */,
+				32AF96BD2B0E1019008A15AD /* CustomButtonNav.swift */,
+				324A16EF2B0940EC0099E9B6 /* ListDoctor.swift */,
+				32026E942B0D038D0044367B /* CustomView.swift */,
+				32026E962B0D03F30044367B /* CustomTabBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32AF96B52B0DF43D008A15AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				326A72892B0D323600BA8173 /* DoctorMenu.swift */,
+				326A72872B0D2BDE00BA8173 /* UserInfo.swift */,
+				327C97132B063E1D000BFA56 /* Theme.swift */,
+				327C97152B063E1D000BFA56 /* DoctorList.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32AF96B62B0DF52C008A15AD /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				32D850332B0A6E5C0048FD8D /* TokenTipography.swift */,
+				3285FE522B0B9DA50096ECBB /* AppColors.swift */,
+				32AF96BB2B0E0BAF008A15AD /* Padding&Size.swift */,
+				32D850352B0A74750048FD8D /* Fonts */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		32D850352B0A74750048FD8D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				326A72802B0D1C9900BA8173 /* Nunito-Bold.ttf */,
@@ -156,8 +163,9 @@
 				32D850362B0A74E50048FD8D /* Poppins-Regular.ttf */,
 				32D850382B0A74FF0048FD8D /* Poppins-Bold.ttf */,
 				32D8503A2B0A75130048FD8D /* Poppins-Light.ttf */,
+				32AF96B92B0E0668008A15AD /* Poppins-SemiBold.ttf */,
 			);
-			path = Fon;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +229,7 @@
 				32D850372B0A74E50048FD8D /* Poppins-Regular.ttf in Resources */,
 				326A72832B0D250100BA8173 /* Localization.strings in Resources */,
 				32D8503B2B0A75130048FD8D /* Poppins-Light.ttf in Resources */,
-				3259274C2B04DDBC00BD8A6E /* Preview Assets.xcassets in Resources */,
+				32AF96BA2B0E0668008A15AD /* Poppins-SemiBold.ttf in Resources */,
 				325927492B04DDBC00BD8A6E /* Assets.xcassets in Resources */,
 				32D850392B0A74FF0048FD8D /* Poppins-Bold.ttf in Resources */,
 			);
@@ -235,22 +243,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D850342B0A6E5C0048FD8D /* TokenTipography.swift in Sources */,
-				32A0BB732B06885C005ED767 /* NavPanel.swift in Sources */,
 				32999E5E2B07797D00588FD9 /* ChosenDoctorHeader.swift in Sources */,
 				327C97162B063E1D000BFA56 /* DoctorList.swift in Sources */,
 				32026E972B0D03F30044367B /* CustomTabBar.swift in Sources */,
 				32999E5C2B07781C00588FD9 /* HeaderWelcome .swift in Sources */,
 				324A16F02B0940EC0099E9B6 /* ListDoctor.swift in Sources */,
-				327C971A2B0643F7000BFA56 /* TrailingIconLabelStyle.swift in Sources */,
+				32AF96BC2B0E0BAF008A15AD /* Padding&Size.swift in Sources */,
+				32AF96BE2B0E1019008A15AD /* CustomButtonNav.swift in Sources */,
 				327C97142B063E1D000BFA56 /* Theme.swift in Sources */,
 				32026E952B0D038D0044367B /* CustomView.swift in Sources */,
-				325927472B04DDBB00BD8A6E /* MeetingView.swift in Sources */,
 				32999E5A2B07757400588FD9 /* MainScreen.swift in Sources */,
+				32AF96B82B0DF6AE008A15AD /* GeneralImages.swift in Sources */,
 				326A728A2B0D323600BA8173 /* DoctorMenu.swift in Sources */,
 				325927452B04DDBB00BD8A6E /* IosApp.swift in Sources */,
 				32AE6B842B0908C600564924 /* IconsList.swift in Sources */,
 				3285FE532B0B9DA50096ECBB /* AppColors.swift in Sources */,
-				327C97182B063E1D000BFA56 /* CardView.swift in Sources */,
+				327C97182B063E1D000BFA56 /* DoctorSample.swift in Sources */,
 				326A72882B0D2BDE00BA8173 /* UserInfo.swift in Sources */,
 				329C525E2B07E19600329251 /* SearchButton.swift in Sources */,
 			);

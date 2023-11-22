@@ -15,30 +15,31 @@ struct ChosenDoctorHeader : View  {
             
             HStack {
                 ZStack {
-                    Circle().frame(width: 50, height: 60)
+                    Circle().frame(width: CircleSizeHeader.width, height: CircleSizeHeader.height )
                     Image(doctor.avatar).resizable()
-                        .frame(width: 50, height: 60)
+                        .frame(width: CircleSizeHeader.width, height: CircleSizeHeader.height )
                         .clipShape(Circle())
                 }
                 VStack(alignment: .leading)  {
                     Text(localisedDr + ". " + doctor.name).font(Font.regularBold).padding(.bottom, 1)
-                    Text(doctor.specialization).font(Font.regularTextSmall).foregroundColor(Color.specializationTextColor)
+                        .accessibilityValue("Doctor \(doctor.name)")
+                    Text(doctor.specialization).font(Font.regularTextSmall).foregroundColor(Color.specializationTextColor).accessibilityValue("\(doctor.specialization)")
                 }
                 Spacer()
                 Button(action: {
-                 
-                }) {
-                    Image("arrow-right")
                     
-                }
+                }) {
+                    Image.arrowRight
+                    
+                }.accessibilityLabel("Button for more info clicked")
             }.padding(.trailing, 20).padding(.leading, 20).padding(.top, 20).padding(.bottom, 1)
             Divider().frame(maxWidth: .infinity).padding(.trailing, 20).padding(.leading,20)
             HStack()  {
-                Image("calendar-2")
-                Text(doctor.date).font(Font.regularTextSmallest)
+                Image.calendar
+                Text(doctor.date).font(Font.regularTextSmallest).accessibilityValue("\(doctor.date)")
                 Spacer()
-                Image("clock")
-                Text(doctor.time).font(Font.regularTextSmallest)
+                Image.clock
+                Text(doctor.time).font(Font.regularTextSmallest).accessibilityValue("\(doctor.time)")
                 
             }.padding(.trailing, 60).padding(.leading, 20).padding(.top, 10).padding(.bottom, 20)
             
@@ -48,7 +49,7 @@ struct ChosenDoctorHeader : View  {
             
             
         }.frame(maxWidth: .infinity).background(BaseColor.mainNavColor).clipShape(RoundedRectangle(cornerRadius: 20))
-            .foregroundColor(.white).padding(.trailing, 15).padding(.leading, 15).padding(.bottom, 1)
+            .foregroundColor(.white).padding(.bottom, 1)
         
     }
 }

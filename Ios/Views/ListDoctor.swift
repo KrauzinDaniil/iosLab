@@ -17,12 +17,12 @@ struct List : View  {
         
         VStack {
             HStack{
-                Text(nearDoctor).font(Font.regularBoldLarger).foregroundColor(Color.welcomeTextColor)
+                Text(nearDoctor).font(Font.semiBoldPoppins).foregroundColor(Color.welcomeTextColor).accessibilityLabel("\(nearDoctor)")
                 Spacer()
             }.padding(.leading, 12)
             
             ForEach(scrums) { scrum in
-                CardView(scrum: scrum)
+                DoctorSample(scrum: scrum)
                 
             }
             
@@ -38,7 +38,7 @@ struct List : View  {
 
 
 
-struct List_Preview : PreviewProvider  {
+struct Lis_Preview : PreviewProvider  {
     static var previews: some View  {
         List(scrums: DoctorList.sampleData)
     }

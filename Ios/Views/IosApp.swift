@@ -11,8 +11,8 @@ import SwiftUI
 struct IosApp: App {
     var body: some Scene {
         WindowGroup {
-           NavPanel(scrums: DoctorList.sampleData)
-
+            TBView(scrums: DoctorList.sampleData)
+            
         }
     }
 }
